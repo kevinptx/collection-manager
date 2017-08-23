@@ -5,7 +5,7 @@ const mongoose = require("mongoose")
 // define the schema
 const wineSchema = new mongoose.Schema({
   name: {type: String, required: true, unique: true},
-  country: {type: String, required: true},
+  country: {type: String, required: true}
 })
 
 const Wine = mongoose.model("Wine", wineSchema)
