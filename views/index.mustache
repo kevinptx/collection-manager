@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>ORGANIC HEALTH WINE INTERNATIONAL</h1>
+
+    <a href="/wines/new">New Wine</a>
+
+
+    {{#wines}}
+    <li><a href="/wines/{{_id}}">{{name}}</a></li>
+    {{/wines}}
+
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>EDIT WINE</h1>
+
+    <form class="" action="/wines/{{wine._id}}" method="post">
+      <div class="">
+        <label for="name">Name</label>
+        <input type="text" name="name" value="{{wine.name}}">{{#errors.name}}Name is required{{/errors.name}}
+      </div>
+
+      <div class="">
+        <label for="country">Country</label>
+        <input type="text" name="country" value="{{wine.country}}">{{#errors.country}}Country is required{{/errors.country}}
+      </div>
+
+      <button type="submit" name="button">Update Wine</button>
+    </form>
+
+
+  </body>
+</html>
